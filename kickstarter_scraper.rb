@@ -16,7 +16,9 @@ def create_project_hash
   projects = {}
 
   kickstater.css("li.project.grid_4").each do |project|
-    project[project] = {}
-end
+    projects[project] = {}
+  end
+  projects
+end # of create hash
 
 create_project_hash
