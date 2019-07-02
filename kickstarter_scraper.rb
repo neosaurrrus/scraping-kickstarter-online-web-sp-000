@@ -5,7 +5,7 @@
  #image link: project.css("div.project-thumbnail a img").attribute("src").value
 #description: project.css("p.bbcard_blurb").text
 # project.css(".location-name").text
-# percentage: project.css("ul.project-stats li.first.funded strong").text
+# percentage: project.css("ul.project-stats li.first.funded strong").text.gsub("%", "").to_i
 
 require('nokogiri')
 require('pry')
