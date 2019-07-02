@@ -1,4 +1,6 @@
 # require libraries/modules here
+
+#projects: kickstarter.css("li.project.grid_4")
 require('nokogiri')
 require('pry')
 def create_project_hash
